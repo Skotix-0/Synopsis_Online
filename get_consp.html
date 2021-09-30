@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<main>
+    <header>
+        <div class="header_main">  
+            <a id="logo_img" href="index.html"></a>
+            <div class="link">
+                <a href="#">Получить конспект</a>
+                <a href="instruction.html">Инструкция</a>
+            </div>
+        </div>  
+
+    </header> 
+   <div class="all" >
+        <div class="writeText">
+            
+            <canvas id='textCanvas' width="630" height="890"></canvas>
+            <div class="text_area_main">
+                
+                <div class="text_area_styls">
+                    <div class="writeText_button">
+                
+                        <select id="sriftRazmer">
+                            <option selected disabled>Размер шрифта</option>
+                            <option value="8px">8</option>
+                            <option value="9px">9</option>
+                            <option value="10px">10</option>
+                            <option value="11px">11</option>
+                            <option value="12px">12</option>
+                            <option value="14px">14</option>
+                            <option value="16px">16</option>
+                            <option value="18px">18</option>
+                            <option value="24px">24</option>
+                            <option value="26px">26</option>
+                            <option value="28px">28</option>
+                            <option value="30px">30</option>
+                            <option value="32px">32</option>
+                            <option value="35px">35</option>
+                            <option value="40px">40</option>
+                            <option value="45px">45</option>
+                        </select>
+                        <select id="color_font">
+                            <option selected disabled>Цвет шрифта</option>
+                            <option value="#000" style="background: #000;">Чёрный</option>
+                            <option value="#4169e1" style="background: #4169e1;">Синий</option>
+                        </select>
+                        <select id="shrift">
+                            <option selected disabled>Шрифт</option>
+                            <option value="Eskal" style="font-family: Eskal; font-size: 40px;">Пример #1</option> <!-- Eskal -->
+                            <option value="Abram"style="font-family: Abram;font-size: 40px;">Пример #2</option><!-- Abram -->
+                            <option value="Anselmo"style="font-family: Anselmo;font-size: 40px;">Пример #3</option><!-- Anselmo -->
+                            <option value="Benvolio"style="font-family: Benvolio;font-size: 40px;">Пример #4</option><!-- Benvolio -->
+                            <option value="Capuletty"style="font-family: Capuletty;font-size: 40px;">Пример #5</option><!-- Capuletty -->
+                            <option value="Djiovanni"style="font-family: Djiovanni;font-size: 40px;">Пример #6</option><!-- Djiovanni -->
+                            <option value="Gregory"style="font-family: Gregory;font-size: 40px;">Пример #7</option><!-- Gregory -->
+                            <option value="Lexa"style="font-family: Lexa;font-size: 40px;">Пример #8</option><!-- Lexa -->
+                            <option value="Lorenco"style="font-family: Lorenco;font-size: 40px;">Пример #9</option><!-- Lorenco -->
+                            <option value="Merkucio"style="font-family: Merkucio;font-size: 40px;">Пример #10</option><!-- Merkucio -->
+                            <option value="Montekky"style="font-family: Montekky;font-size: 40px;">Пример #11</option><!-- Montekky -->
+                            <option value="Pag"style="font-family: Pag;font-size: 40px;">Пример #12</option><!-- Pag -->
+                            <option value="Paris"style="font-family: Paris;font-size: 40px;">Пример #13</option><!-- Paris -->
+                            <option value="Salavat"style="font-family: Salavat;font-size: 40px;">Пример #14</option><!-- Salavat -->
+                            <option value="Samson"style="font-family: Samson;font-size: 40px;">Пример #15</option><!-- Samson -->
+                            <option value="Stefano"style="font-family: Stefano;font-size: 40px;">Пример #16</option><!-- Stefano -->
+                            <option value="Tibalt"style="font-family: Tibalt;font-size: 40px;">Пример #17</option><!-- Tibalt -->
+                        </select>
+                        <div class="settings">
+                            <!-- <div class="settings_info">
+                                
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="settings_and_textArea" >
+                        <div class="settings_block_show" style="display: none; text-align: center;" >
+                            <h3>Дополнительные опции находяться в разработке</h3>
+                        </div>
+                        <div class="textArea">
+                            <textarea id='text' placeholder="Введите текст..." ></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="btn_sumb">
+                        <button  id="SendBtn"><span id="img_btn_podval"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="result_main">
+            <div class="resultIMG">
+                <img id='image'>
+            </div>
+            <button class="download" id="SettingsSaveBtnNotif">Сохранить изображение</button>
+        </div>
+
+    </div> 
+</main> 
+
+<footer>
+    <span>by Skotix-0 2020 V 1.0</span>
+</footer>
+
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+body,*{
+    margin: 0px;
+    padding: 0px;
+}
+
+canvas{
+    border: 1px black solid;
+    text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+}
+#textCanvas{
+    display: none;
+}
+
+.result_main{
+    display: flex;
+    flex-direction: column;
+}
+
+.main_page_info{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img_main{
+    width: 300px;
+}
+
+#img_main_printer{
+    width: 50px;
+}
+
+.photo{
+    width: 70%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.settings_and_textArea{
+    width: 95%;
+    height: 90%;
+}
+
+.textArea{
+    height: 100%;
+}
+
+.strelka_printer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img_main_printer_strelka{
+    width: 300px;
+}
+
+.text_main_page_info{
+    width: 50%;
+    font-family: arial;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 30px;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px 10px;
+    background: white;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 8px black;
+}
+
+.main_page_text{
+    text-align: center;   
+    padding: 10px 40px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 2px black;
+    margin-bottom: 15px;
+}
+
+.main_page_text p{
+    font-family: Arial sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text_area_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.text_area_styls{
+    width: 500px;
+    height: 90vh;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px black;
+    padding: 10px 0px;
+}
+
+.text_area_stylsS{
+    width: 500px;
+    height: 60vh;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px black;
+    padding: 10px 0px;
+}
+
+#SendBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 1px black;
+    cursor: pointer;
+    outline: none;
+    background: url(img/strelka.png) center;
+    background-size: cover;
+    transition: all .5s;
+}
+
+
+#SendBtn:hover{
+    background: url(img/strelka_active.png) center;
+    background-size: cover;
+    background-color: black;
+    border: none;
+}
+
+.resultIMG{
+    width: 600px;
+    height: 100vh;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+#logo_img{
+    background: url(img/Logo_active.png) center;
+    background-size: cover;
+    width: 100px;
+    height: 40px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#logo_img:hover{
+    background: url(img/Logo_no_active.png) center;
+    background-size: cover;
+    width: 100px;
+    height: 40px;
+}
+
+#image{
+    width: 100%;
+    height: 90vh;
+    display: none;
+}
+
+
+
+#text{
+    width: 95%;
+    height: 95%;
+    resize: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
+
+.settings_block_show{
+    height: 100%;
+    border: 1px solid white; 
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px black;
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    background-color: #5587bf;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.settings{
+    background: url(img/settings_gear.png) center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.settings:hover{
+    background: url(img/settings_gear_hover.png) center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.header_main{
+    width: 100%;
+    height: 40px;
+    background-color: #5587bf;
+    position: relative;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+.link a {
+    text-decoration: none;
+    color :black;
+    transition: all .5s;
+}
+
+.link a:hover {
+    color :white;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #6c9fd8;
+}
+
+.writeText{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.all{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.allS{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.writeText_button{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+#sriftRazmer{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#shrift{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn_sumb{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 10px;
+    
+}
+
+#SettingsSaveBtnNotif{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-align: center;
+    box-shadow: 0.5px 0px 1px black;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-decoration: none!important;
+    font-family: Arial,Helvetica CY,Nimbus Sans L,sans-serif;
+    height: 2.4rem;
+    min-width: 100px;
+    padding: 0 20px;
+    border-radius: 6px;
+    font-size: 21px;
+    line-height: 2.4rem;
+    background: #5dbeff;
+    background: linear-gradient(180deg,#5dbeff 0,#4096ef);
+    color: #fff!important;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+
+#SettingsSaveBtnNotif_2{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-align: center;
+    box-shadow: 0.5px 0px 1px black;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-decoration: none!important;
+    font-family: Arial,Helvetica CY,Nimbus Sans L,sans-serif;
+    height: 3.4rem;
+    min-width: 100px;
+    padding: 0 40px;
+    border-radius: 6px;
+    font-size: 21px;
+    line-height: 3.4rem;
+    background: #5dbeff;
+    background: linear-gradient(180deg,#5dbeff 0,#4096ef);
+    color: #fff!important;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #100f0f;
+    color: white;
+    font-size: 20px;
+}
+
+.main_image{
+    width: 500px;
+    height: 90%;
+}
+
+#main_instr_img{
+    width: 100%;
+    height: 100%;
+}
+
+.all_text_instr{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.one_1,.one_2,.one_3,.one_4,.one_5,.one_6{
+    padding-bottom: 20px; 
+}
+
+.ata{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
